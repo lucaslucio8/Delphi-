@@ -1,0 +1,40 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Mask,
+  Vcl.Buttons;
+
+type
+  TFrmCadastro = class(TForm)
+    pnlDados: TPanel;
+    pnlBotoes: TPanel;
+    pnlMensagens: TPanel;
+    lblCPF: TLabel;
+    lblNome: TLabel;
+    lblDataNasc: TLabel;
+    mkeCPF: TMaskEdit;
+    mkeDataNasc: TMaskEdit;
+    edtNome: TEdit;
+    btnExibir: TBitBtn;
+    btnLimpar: TBitBtn;
+    btnSair: TBitBtn;
+    btnCalculadora: TBitBtn;
+    btnNavegador: TBitBtn;
+    btnDataHora: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCadastro: TFrmCadastro;
+
+implementation
+
+{$R *.dfm}
+
+end.
